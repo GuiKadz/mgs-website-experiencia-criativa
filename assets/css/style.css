@@ -2,4 +2,32 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Jost', sans-serif;
+}
+
+header {
+  width: 100vw;
+  height: 75px;
+  display: flex;
+  background-color: #000;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.alink {
+  text-decoration: none;
+  color: rgb(255, 255, 0);
+  font-weight: bold;
+  transition: all 0.7s ease;
+}
+
+.alink:hover {
+  color: rgb(170, 162, 44);
 }

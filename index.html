@@ -1,21 +1,29 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="assets/css/style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MGS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <nav>
-      <a href="#" class="logo">MGS</a>
-      <ul>
-        <li><a href="/" data-link class="">Sobre</a></li>
-        <li><a href="/servicos" data-link>Serviços</a></li>
-        <li><a href="/portfolio" data-link>História</a></li>
-        <li><a href="/contato" data-link>Contato</a></li>
-      </ul>
-    </nav>
-
+    <header>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="./pages/home.html" class="alink">Home</a></li>
+          <li><a href="./pages/portfolio.html" class="alink">Portfólio</a></li>
+          <li><a href="./pages/servicos.html" class="alink">Serviços</a></li>
+          <li><a href="./pages/contato.html" class="alink">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
     <div id="app"></div>
 
     <script src="./assets/js/main.js"></script>
