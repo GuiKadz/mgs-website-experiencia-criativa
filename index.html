@@ -1,23 +1,167 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MGS</title>
+    <meta
+      name="description"
+      content="MGS — Produção e Manutenção de Máquinas Industriais para Mineração e Madeireira."
+    />
+    <title>MGS — Máquinas Industriais</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <nav>
-      <a href="#" class="logo">MGS</a>
-      <ul>
-        <li><a href="/" data-link class="">Sobre</a></li>
-        <li><a href="/servicos" data-link>Serviços</a></li>
-        <li><a href="/portfolio" data-link>História</a></li>
-        <li><a href="/contato" data-link>Contato</a></li>
-      </ul>
-    </nav>
+    <header>
+      <a href="/" data-link class="nav-logo">
+        <img src="./assets/img/logo.svg" alt="MGS Logo" onerror="this.style.display = 'none'" />
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#sobre" data-link class="nav-link">Sobre</a></li>
+          <li><a href="#servicos" data-link class="nav-link">Serviços</a></li>
+          <li><a href="#contato" data-link class="nav-link">Contato</a></li>
+        </ul>
 
-    <div id="app"></div>
+        <a href="#contato" data-link class="nav-cta"
+          ><button class="nav-cta-button">Entre em Contato</button></a
+        >
 
+        <button class="nav-hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-eyebrow">Soluções Industriais</p>
+        <h1 class="hero-title">Força e precisão<br />para a mineração</h1>
+        <p class="hero-subtitle">
+          Produção e manutenção de máquinas industriais com qualidade e confiabilidade.
+        </p>
+        <div class="hero-actions">
+          <a href="#servicos" data-link class="btn-primary">Nossos Serviços</a>
+          <a href="#contato" data-link class="btn-ghost">Fale Conosco</a>
+        </div>
+      </div>
+    </section>
+    <section class="section-split bg-dark" id="sobre">
+      <div class="split-image">
+        <img src="./assets/img/factory.svg" alt="Operação de mineração" />
+      </div>
+      <div class="split-text">
+        <p class="section-eyebrow">Quem somos</p>
+        <h2 class="section-title">Feitos para quem trabalha com o que é pesado</h2>
+        <p class="section-body">
+          A MGS nasceu dentro da mineração. Entendemos a pressão de uma máquina parada, o custo de
+          uma peça errada e o que significa ter um equipamento que não falha quando precisa
+          funcionar.
+        </p>
+        <p class="section-body">
+          Fabricamos e mantemos máquinas industriais com a seriedade de quem conhece o trabalho de
+          perto — sem atalhos, sem improviso.
+        </p>
+        <a href="#contato" class="btn-primary">Fale com a gente</a>
+      </div>
+    </section>
+
+    <section class="section-split bg-light reverse" id="servicos">
+      <div class="split-image">
+        <img src="./assets/img/robotic.svg" alt="Manutenção industrial" />
+      </div>
+      <div class="split-text">
+        <p class="section-eyebrow">Fabricação</p>
+        <h2 class="section-title">Máquinas construídas do zero para a sua operação</h2>
+        <p class="section-body">
+          Projetamos e fabricamos equipamentos industriais sob medida para os desafios da mineração.
+          Cada máquina sai testada e pronta para o trabalho real.
+        </p>
+        <a href="#contato" class="btn-dark">Solicitar orçamento</a>
+      </div>
+    </section>
+
+    <section class="section-split bg-dark">
+      <div class="split-image">
+        <img src="./assets/img/data.svg" alt="Fabricação de máquinas" />
+      </div>
+      <div class="split-text">
+        <p class="section-eyebrow">Manutenção</p>
+        <h2 class="section-title">Máquina parada é prejuízo. A gente resolve rápido.</h2>
+        <p class="section-body">
+          Realizamos manutenção preventiva e corretiva em equipamentos industriais. Nossa equipe vai
+          até o local, diagnostica e coloca sua operação de volta nos trilhos.
+        </p>
+        <a href="#contato" class="btn-primary">Fale com a gente</a>
+      </div>
+    </section>
+
+    <section class="section-contato bg-light" id="contato">
+      <div class="container">
+        <p class="section-eyebrow center">Contato</p>
+        <h2 class="section-title center">Precisa de uma máquina ou de manutenção?</h2>
+        <p class="section-subtitle center">Manda sua necessidade que a gente responde rápido.</p>
+        <form class="contato-form" id="contatoForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+            </div>
+            <div class="form-group">
+              <label for="empresa">Empresa</label>
+              <input type="text" id="empresa" name="empresa" placeholder="Nome da empresa" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="telefone">Telefone</label>
+              <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="servico">Tipo de serviço</label>
+            <select id="servico" name="servico">
+              <option value="">Selecione...</option>
+              <option value="fabricacao">Fabricação de máquina</option>
+              <option value="manutencao">Manutenção</option>
+              <option value="orcamento">Orçamento geral</option>
+              <option value="outro">Outro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="mensagem">Mensagem</label>
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              rows="5"
+              placeholder="Descreva o que precisa..."
+            ></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-full">Enviar mensagem</button>
+          <p class="form-feedback" id="formFeedback"></p>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <img
+          src="./assets/img/logo.svg"
+          alt="MGS"
+          class="footer-logo"
+          onerror="this.style.display = 'none'"
+        />
+        <p class="footer-copy">© 2025 MGS — Todos os direitos reservados</p>
+        <div class="footer-links">
+          <a href="#sobre">Sobre</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#contato">Contato</a>
+        </div>
+      </div>
+    </footer>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
