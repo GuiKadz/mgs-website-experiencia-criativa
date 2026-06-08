@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="MGS — Entre em contato para orçamentos e manutenção de máquinas industriais."
+    />
+    <title>Contato — MGS Máquinas Industriais</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/pages.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="nav-logo">
+        <img src="./assets/img/logo.svg" alt="MGS Logo" />
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="servicos.html" class="nav-link">Serviços</a></li>
+          <li><a href="portfolio.html" class="nav-link">Portfólio</a></li>
+          <li><a href="contato.html" class="nav-link active">Contato</a></li>
+        </ul>
+        <a href="contato.html" class="nav-cta">
+          <button class="nav-cta-button">Entre em Contato</button>
+        </a>
+        <button class="nav-hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </header>
+
+    <section class="page-hero bg-dark">
+      <div class="page-hero-content">
+        <p class="section-eyebrow">Fale com a gente</p>
+        <h1 class="page-hero-title">Contato</h1>
+        <p class="page-hero-sub">Manda sua necessidade. A gente responde rápido.</p>
+      </div>
+    </section>
+
+    <section class="contato-page bg-light">
+      <div class="container contato-page-inner">
+        <div class="contato-info">
+          <h2 class="contato-info-title">Como podemos ajudar?</h2>
+          <p class="contato-info-body">
+            Se você precisa fabricar um equipamento, agendar uma manutenção ou tem uma máquina
+            parada esperando diagnóstico, esse é o lugar certo.
+          </p>
+
+          <div class="contato-items">
+            <div class="contato-item">
+              <div>
+                <strong>Fabricação sob medida</strong>
+                <p>Descreva o equipamento e as condições de operação.</p>
+              </div>
+            </div>
+            <div class="contato-item">
+              <div>
+                <strong>Manutenção preventiva</strong>
+                <p>Informe o equipamento e a frequência desejada.</p>
+              </div>
+            </div>
+            <div class="contato-item">
+              <div>
+                <strong>Manutenção corretiva</strong>
+                <p>Descreva a falha e a urgência. Respondemos com prioridade.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contato-aviso">
+            <p>
+              Atendemos presencialmente no local do cliente na região de Santa Catarina e regiões
+              adjacentes.
+            </p>
+          </div>
+        </div>
+
+        <div class="contato-form-wrap">
+          <form class="contato-form" id="contatoForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+              </div>
+              <div class="form-group">
+                <label for="empresa">Empresa</label>
+                <input type="text" id="empresa" name="empresa" placeholder="Nome da empresa" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+              </div>
+              <div class="form-group">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="servico">Tipo de serviço</label>
+              <select id="servico" name="servico">
+                <option value="">Selecione...</option>
+                <option value="fabricacao">Fabricação de máquina</option>
+                <option value="preventiva">Manutenção preventiva</option>
+                <option value="corretiva">Manutenção corretiva</option>
+                <option value="orcamento">Orçamento geral</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="mensagem">Mensagem</label>
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                rows="5"
+                placeholder="Descreva o equipamento, o problema ou o que precisa..."
+              ></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-full">Enviar mensagem</button>
+            <p class="form-feedback" id="formFeedback"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <img src="./assets/img/logo.svg" alt="MGS" class="footer-logo" />
+        <p class="footer-copy">© 2025 MGS — Todos os direitos reservados</p>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="servicos.html">Serviços</a>
+          <a href="portfolio.html">Portfólio</a>
+          <a href="contato.html">Contato</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

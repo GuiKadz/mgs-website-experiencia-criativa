@@ -1,3 +1,4 @@
+// menu hambúrguer
 const hamburger = document.querySelector('.nav-hamburger');
 const nav = document.querySelector('.nav-links');
 
@@ -15,6 +16,7 @@ if (hamburger && nav) {
   });
 }
 
+// formulário de contato
 const form = document.getElementById('contatoForm');
 const feedback = document.getElementById('formFeedback');
 
@@ -37,6 +39,7 @@ if (form) {
   });
 }
 
+// rolagem suave
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
     const alvo = document.querySelector(a.getAttribute('href'));
@@ -46,3 +49,23 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     }
   });
 });
+
+// filtro do portfólio
+const filtros = document.querySelectorAll('.filtro-btn');
+const cards = document.querySelectorAll('.portfolio-card');
+
+if (filtros.length) {
+  filtros.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filtros.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const categoria = btn.dataset.filtro;
+
+      cards.forEach(card => {
+        const match = categoria === 'todos' || card.dataset.categoria === categoria;
+        card.classList.toggle('hidden', !match);
+      });
+    });
+  });
+}

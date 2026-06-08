@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="MGS — Portfólio de projetos de fabricação e manutenção de máquinas industriais."
+    />
+    <title>Portfólio — MGS Máquinas Industriais</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/pages.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="nav-logo">
+        <img src="./assets/img/logo.svg" alt="MGS Logo" />
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="servicos.html" class="nav-link">Serviços</a></li>
+          <li><a href="portfolio.html" class="nav-link active">Portfólio</a></li>
+          <li><a href="contato.html" class="nav-link">Contato</a></li>
+        </ul>
+        <a href="contato.html" class="nav-cta">
+          <button class="nav-cta-button">Entre em Contato</button>
+        </a>
+        <button class="nav-hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </header>
+
+    <section class="page-hero bg-dark">
+      <div class="page-hero-content">
+        <p class="section-eyebrow">Trabalhos realizados</p>
+        <h1 class="page-hero-title">Portfólio</h1>
+        <p class="page-hero-sub">
+          Projetos entregues com precisão técnica e comprometimento com a operação do cliente.
+        </p>
+      </div>
+    </section>
+
+    <section class="portfolio-filtros bg-light">
+      <div class="container">
+        <div class="filtros-row">
+          <button class="filtro-btn active" data-filtro="todos">Todos</button>
+          <button class="filtro-btn" data-filtro="fabricacao">Fabricação</button>
+          <button class="filtro-btn" data-filtro="preventiva">Manutenção Preventiva</button>
+          <button class="filtro-btn" data-filtro="corretiva">Manutenção Corretiva</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio-grid-section bg-light">
+      <div class="container">
+        <div class="portfolio-grid">
+          <article class="portfolio-card" data-categoria="fabricacao">
+            <div class="portfolio-card-img">
+              <img src="./assets/img/robotic.svg" alt="Transportador de correia para mineração" />
+            </div>
+            <div class="portfolio-card-body">
+              <span class="portfolio-tag">Fabricação</span>
+              <h3 class="portfolio-card-title">Transportador de correia para mineradora</h3>
+              <p class="portfolio-card-desc">
+                Projeto e fabricação de transportador de correia de 40 metros para operação contínua
+                em mineração de areia. Estrutura em aço carbono com proteções laterais.
+              </p>
+            </div>
+          </article>
+
+          <article class="portfolio-card" data-categoria="corretiva">
+            <div class="portfolio-card-img">
+              <img src="./assets/img/factory.svg" alt="Reparo de peneira vibratória" />
+            </div>
+            <div class="portfolio-card-body">
+              <span class="portfolio-tag portfolio-tag--corretiva">Manutenção Corretiva</span>
+              <h3 class="portfolio-card-title">Reparo de peneira vibratória</h3>
+              <p class="portfolio-card-desc">
+                Diagnóstico e reparo emergencial de peneira vibratória com mancais danificados.
+                Substituição de componentes e retorno à operação em menos de 24 horas.
+              </p>
+            </div>
+          </article>
+
+          <article class="portfolio-card" data-categoria="preventiva">
+            <div class="portfolio-card-img">
+              <img src="./assets/img/data.svg" alt="Manutenção preventiva em britador" />
+            </div>
+            <div class="portfolio-card-body">
+              <span class="portfolio-tag portfolio-tag--preventiva">Manutenção Preventiva</span>
+              <h3 class="portfolio-card-title">Revisão geral em britador de mandíbulas</h3>
+              <p class="portfolio-card-desc">
+                Inspeção completa, troca de desgastes, ajuste de abertura e lubrificação de todos os
+                pontos. Equipamento operando com eficiência plena após a revisão.
+              </p>
+            </div>
+          </article>
+
+          <article class="portfolio-card" data-categoria="fabricacao">
+            <div class="portfolio-card-img">
+              <img src="./assets/img/robotic.svg" alt="Estrutura metálica para draga" />
+            </div>
+            <div class="portfolio-card-body">
+              <span class="portfolio-tag">Fabricação</span>
+              <h3 class="portfolio-card-title">Estrutura metálica para draga de areia</h3>
+              <p class="portfolio-card-desc">
+                Fabricação de estrutura principal de draga flutuante para extração de areia em rio.
+                Soldagem estrutural com inspeção de qualidade em cada junta.
+              </p>
+            </div>
+          </article>
+
+          <article class="portfolio-card" data-categoria="corretiva">
+            <div class="portfolio-card-img">
+              <img src="./assets/img/factory.svg" alt="Reparo de bomba de polpa" />
+            </div>
+            <div class="portfolio-card-body">
+              <span class="portfolio-tag portfolio-tag--corretiva">Manutenção Corretiva</span>
+              <h3 class="portfolio-card-title">Reparo de bomba de polpa mineral</h3>
+              <p class="portfolio-card-desc">
+                Desmontagem, análise de desgaste, recuperação de eixo e substituição de vedações.
+                Bomba devolvida ao cliente com desempenho de origem.
+              </p>
+            </div>
+          </article>
+
+          <article class="portfolio-card" data-categoria="preventiva">
+            <div class="portfolio-card-img">
+              <img src="./assets/img/data.svg" alt="Preventiva em esteira de mineração" />
+            </div>
+            <div class="portfolio-card-body">
+              <span class="portfolio-tag portfolio-tag--preventiva">Manutenção Preventiva</span>
+              <h3 class="portfolio-card-title">Preventiva em sistema de esteiras</h3>
+              <p class="portfolio-card-desc">
+                Inspeção e regulagem de tensionamento, alinhamento de correias e substituição de
+                rolos desgastados em sistema de três esteiras interligadas.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-banner bg-dark">
+      <div class="container cta-inner">
+        <h2 class="cta-title">Tem um projeto em mente?</h2>
+        <p class="cta-sub">
+          Descreva o equipamento ou a situação e a gente avalia como podemos ajudar.
+        </p>
+        <a href="contato.html" class="btn-primary">Entrar em contato</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <img src="./assets/img/logo.svg" alt="MGS" class="footer-logo" />
+        <p class="footer-copy">© 2025 MGS — Todos os direitos reservados</p>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="servicos.html">Serviços</a>
+          <a href="portfolio.html">Portfólio</a>
+          <a href="contato.html">Contato</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
